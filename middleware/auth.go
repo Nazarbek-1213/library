@@ -120,3 +120,4 @@ func RequireRole(role string) func(http.Handler) http.Handler {
 func RequireAdmin(next http.Handler) http.Handler {
 	return RequireRole("admin")(next)
 }
+
